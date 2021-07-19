@@ -1,14 +1,14 @@
 //Factory
 
 // A constructor for defining new toysDuck
-function ToyDuck(options) {
+function ToyDuck(color, price) {
     // some defaults
     this.color = options.color;
     this.price = options.price;
 }
 
 // A constructor for defining new toysCar
-function ToyCar(options) {
+function ToyCar(color, price, name) {
     this.color = options.color;
     this.price = options.price;
     this.name = options.name;
