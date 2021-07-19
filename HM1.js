@@ -14,12 +14,6 @@ function ToyCar(options) {
     this.name = options.name;
 }
 
-// Define a skeleton toy factory
-//function ToyFactory() { 
-
-// Our default toyClass is Duck
-//this.toy = ToyDuck;
-//}
 
 // Define a skeleton toy factory
 var Singleton = (function ToyFactory() {
@@ -41,6 +35,7 @@ var Singleton = (function ToyFactory() {
         }
     };
 })();
+
 
 // Our Factory method for creating new Toy instances
 ToyFactory.prototype.createToy = function (options) {
@@ -75,7 +70,7 @@ function testFactory() {
 
     // Outputs: Toy object of color "yellow", price: 100, name: Suzuki.
     console.log(toy);
-   
+
 }
 
 function testSingleton() {
@@ -87,5 +82,3 @@ function testSingleton() {
 
 testFactory();
 testSingleton();
-
-
